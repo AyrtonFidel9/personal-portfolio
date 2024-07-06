@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 8rem;
+  color: white;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  align-items: center;
+  gap: 5rem;
+  background: -webkit-linear-gradient(to left, #131313, #101111, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #171717, #252525, #000000);
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.image_profile {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1;
+}
+
+.boxes {
+  display: block;
+  height: 100%;
+  height: inherit;
+  list-style-type:none;
+  
+  li:nth-child(1)
+  {
+    position: absolute;
+    left:10%;
+    height: 30px;
+    width: 30px;
+    background:rgba(255,255,255,.2);
+  }
+  
+  li:nth-child(2)
+  {
+    position: absolute;
+    left: 30%;
+    height: 45px;
+    width: 45px;
+    background:rgba(255,255,255,.2);
+  }
+  li:nth-child(3)
+  {
+    position: absolute;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    background:rgba(255,255,255,.2);
+  }
+  li:nth-child(4)
+  {
+    position: absolute;
+    left: 70%;
+    height: 35px;
+    width: 35px;
+    background:rgba(255,255,255,.2);
+  }
+  li:nth-child(5)
+  {
+    position: absolute;
+    left: 80%;
+    height: 20px;
+    width: 20px;
+    background:rgba(255,255,255,.2);
+  }
+  li{
+    animation: animate 15s linear 1s infinite;
+  }
+}
+
+@keyframes animate{
+  from{
+    transform: translateY(+1300%) rotate(180deg)
+  }
+  to{
+    transform: translateY(-150%)
+      rotate(360deg)
+  }
+}
+
+@media (min-width: 550px) {
+  .header {
+    flex-wrap: nowrap;
+    padding-left: 5rem; 
+    padding-right: 5rem;
+  }
+  .image_profile {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 770px) {
+  .header {
+    padding-left: 12rem; 
+    padding-right: 12rem;
+  }
+  .image_profile {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .header {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding-left: 33rem; 
+    padding-right: 33rem;
+  }
+  .image_profile {
+    height: 37rem;
+    width: 37rem;
+  }
+}
+

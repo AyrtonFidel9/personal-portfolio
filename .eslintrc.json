@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb-base",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+    //    "plugin:diff/diff"
+  ],
+  "plugins": ["jsx-a11y", "@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "singleQuote": 0,
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-console": "error",
+    "quotes": ["error", "single"],
+    "semi": [2, "always"],
+    "react/require-default-props": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/prop-types": "off", // If you're using TypeScript, prop-types are not needed
+    "@typescript-eslint/explicit-module-boundary-types": "off", // Allows you to skip explicit return types in TypeScript
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // Only .tsx files for JSX
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-unresolved": "off", // TypeScript takes care of this
+    "react/react-in-jsx-scope": "off", // Not needed in Next.js
+    "react/jsx-props-no-spreading": "off", // Allowing spread props
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "jsx-a11y": {
+      "polymorphicPropName": "as",
+      "components": {
+        "CityInput": "input",
+        "CustomButton": "button",
+        "MyButton": "button",
+        "RoundButton": "button"
+      }
+    }
+  }
+}

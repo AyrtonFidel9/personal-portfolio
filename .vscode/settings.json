@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    "/media/ayrton/Almacenamiento/Dev/Nextjs/personal-portfolio"
+  ],
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "exportall.config.relExclusion": ["/src/app/components/index.ts"],
+  "exportall.config.folderListener": ["/src/app/components"]
+}
