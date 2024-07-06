@@ -8,12 +8,12 @@
   padding-left: 4rem;
   padding-right: 4rem;
   align-items: center;
-  gap: 5rem;
   background: -webkit-linear-gradient(to left, #131313, #101111, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #171717, #252525, #000000);
   width: 100%;
   z-index: 0;
   position: relative;
+  height: 100vh;
 }
 
 .image_profile {
@@ -25,10 +25,8 @@
 
 .boxes {
   display: block;
-  height: 100%;
-  height: inherit;
   list-style-type:none;
-  
+    
   li:nth-child(1)
   {
     position: absolute;
@@ -90,6 +88,9 @@
     flex-wrap: nowrap;
     padding-left: 5rem; 
     padding-right: 5rem;
+    .image_profile {
+      margin-right: 4rem;
+    }
   }
   .image_profile {
     height: 25rem;
@@ -105,12 +106,6 @@
   .image_profile {
     height: 35rem;
     width: 35rem;
-  }
-}
-
-@media (min-width: 425px) {
-  .header {
-    height: 100vh;
   }
 }
 

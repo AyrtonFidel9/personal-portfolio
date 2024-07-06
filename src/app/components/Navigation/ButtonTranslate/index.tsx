@@ -1,15 +1,17 @@
 'use client';
 
-import React, { useContext, useEffect, useState } from 'react';
-import TranslateStyles from './ButtonTranslate.module.scss';
+import React, { useEffect, useState } from 'react';
 import { Language } from '@/app/interfaces/language.enum';
 import { useLanguage } from '@/app/context';
 import header from '../../../../content/header.json';
+import TranslateStyles from './ButtonTranslate.module.scss';
 
 function Button() {
   const [hidden, setHidden] = useState(true);
   const { languageOption, setLanguageOption } = useLanguage();
-  const [optionStyles, setOptionStyles] = useState<string>('');
+  const [optionStyles, setOptionStyles] = useState<string>(
+    `${TranslateStyles.translateOptions}`
+  );
 
   const showLanguageOptions = () => {
     setHidden(!hidden);
@@ -88,25 +90,26 @@ function Button() {
           ></path>{' '}
         </g>
       </svg>
-      <ul
+      <div
         key="options-list"
         className={`${optionStyles} ${hidden ? TranslateStyles.hidden_element : ''}`}
       >
-        <li
+        <input
           key="english"
           className="animate__animated animate__fadeInDown"
           onClick={() => setLanguageOption(Language.english)}
-        >
-          English 🇬🇧
-        </li>
-        <li
+          value="English 🇬🇧"
+          type="button"
+        />
+
+        <input
           key="spanish"
           className="animate__animated animate__fadeInDown"
           onClick={() => setLanguageOption(Language.spanish)}
-        >
-          Español 🇪🇸
-        </li>
-      </ul>
+          value="Español 🇪🇸"
+          type="button"
+        />
+      </div>
     </button>
   );
 }

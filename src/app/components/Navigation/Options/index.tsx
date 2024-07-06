@@ -1,17 +1,22 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useLanguage } from '@/app/context';
 import OptionsModule from './Options.module.scss';
 import header from '../../../../content/header.json';
-import { useLanguage } from '@/app/context';
+
+interface option {
+  name: string;
+  href: string;
+}
 
 function Options() {
   const { languageOption } = useLanguage();
 
   return (
     <ul className={OptionsModule.items}>
-      {header[languageOption].navOptions.map((item: string) => {
+      {header[languageOption].navOptions.map((item: option) => {
         return (
-          <li key={item}>
-            <a>{item}</a>
+          <li key={item.name}>
+            <a href={item.href}>{item.name}</a>
           </li>
         );
       })}

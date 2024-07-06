@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import CardStyle from './skillcard.module.scss';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import CardStyle from './skillcard.module.scss';
 
 interface Props {
   imageSrc: string | StaticImport;

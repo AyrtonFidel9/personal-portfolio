@@ -1,0 +1,46 @@
+{
+  "en": {
+    "softskills": [
+      {
+        "title": "Effective Comunication",
+        "description":"Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate. Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure. Exclusive izakaya ",
+        "bkgColor": "rgba(168, 0, 0, 1)",
+        "color": "white"
+      },
+      {
+        "title": "Good Practices",
+        "description":"Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate. Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure. Exclusive izakaya ",
+        "bkgColor": "rgba(255, 184, 0, 1)",
+        "color": "black"
+      },
+      {
+        "title": "Automation",
+        "description":"Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate. Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure. Exclusive izakaya ",
+        "bkgColor": "rgba(0, 129, 137, 1)",
+        "color": "white"
+      }
+    ] 
+  },
+  "es": {
+    "softskills": [
+      {
+        "title": "1",
+        "description":"1",
+        "bkgColor": "rgba(0, 129, 137, 1)",
+        "color": "white"
+      },
+      {
+        "title": "2",
+        "description":"2",
+        "bkgColor": "rgba(0, 129, 137, 1)",
+        "color": "white"
+      },
+      {
+        "title": "3",
+        "description":"3",
+        "bkgColor": "rgba(0, 129, 137, 1)",
+        "color": "white"
+      }
+    ] 
+  }
+}

@@ -1,12 +1,46 @@
 {
   "en": {
-    "navOptions": ["Home", "Projects", "About", "Contact"],
+    "navOptions": [
+      {
+        "name":"Home",
+        "href": "#Home"
+      }, 
+      {
+        "name":"Projects",
+        "href": "#Projects"
+      }, 
+      {
+        "name":"About",
+        "href": "#About"
+      }, 
+      {
+        "name": "Contact",
+        "href": "#Contact"
+      }
+    ],
     "navBtnLanguage": ["Language"],
     "description": "Experienced Cloud Engineer skilled in designing and implementing scalable, optimized, reliable, and secure cloud infrastructures.",
     "btnCv": "Download CV"
   },
   "es": {
-    "navOptions": ["Inicio", "Proyectos", "Sobre mi", "Contacto"],
+    "navOptions": [
+      {
+        "name":"Inicio",
+        "href": "#Home"
+      }, 
+      {
+        "name":"Proyectos",
+        "href": "#Projects"
+      }, 
+      {
+        "name":"Sobre mi",
+        "href": "#About"
+      }, 
+      {
+        "name": "Contacto",
+        "href": "#Contact"
+      }
+    ],
     "navBtnLanguage": ["Lenguaje"],
     "description": "Ingeniero Cloud con experiencia en el diseño e implementación de infraestructuras Cloud escalables, optimizadas, fiables y seguras.",
     "btnCv": "Descargar CV"

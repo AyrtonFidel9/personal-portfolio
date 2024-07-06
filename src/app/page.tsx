@@ -1,9 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import HeaderStyles from './styles/header.module.scss';
 import MainStyles from './styles/main.module.scss';
 import { LanguageProvider } from './context';
-import Image from 'next/image';
 import ImageProfile from '../../public/images/danhousen.jpg';
 import LinuxImage from '../../public/images/linux.png';
 import TerraformImage from '../../public/images/terraform.png';
@@ -12,6 +12,7 @@ import AnsibleImage from '../../public/images/ansible.png';
 import DockerImage from '../../public/images/docker.png';
 import K8sImage from '../../public/images/k8s.png';
 import { SkillCard, ProfileDescription, Navigation } from './components';
+import { SoftSkillsSection } from './sections';
 
 export default function Home() {
   return (
@@ -36,8 +37,8 @@ export default function Home() {
           />
           <ProfileDescription />
         </header>
-        <main id="#About" className={MainStyles.about}>
-          <div className={MainStyles.skill_container}>
+        <main id="About" className={MainStyles.about}>
+          <section className={MainStyles.skill_container}>
             <h3>Skills</h3>
             <div className={MainStyles.skill_cards}>
               <SkillCard imageSrc={LinuxImage} alt={'Linux icon'} />
@@ -47,7 +48,8 @@ export default function Home() {
               <SkillCard imageSrc={DockerImage} alt={'Docker icon'} />
               <SkillCard imageSrc={AnsibleImage} alt={'Ansible icon'} />
             </div>
-          </div>
+          </section>
+          <SoftSkillsSection />
         </main>
         <footer style={{ height: '50vh', backgroundColor: 'black' }}></footer>
       </>

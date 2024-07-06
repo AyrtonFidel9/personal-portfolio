@@ -16,8 +16,8 @@ const LanguageProvider = ({ children }: { children: React.ReactElement }) => {
   return (
     <LanguageContext.Provider
       value={{
-        languageOption: languageOption,
-        setLanguageOption: setLanguageOption,
+        languageOption,
+        setLanguageOption,
       }}
     >
       {children}
