@@ -1,10 +1,10 @@
 import React from 'react';
-import SoftSkillsContent from '@/content/softskills.json';
-import SoftSkillsStyles from './softskills.module.scss';
-import { SkillCard } from './components';
-import { useLanguage } from '@/app/context';
 import Image from 'next/image';
+import SoftSkillsContent from '@/content/softskills.json';
+import { useLanguage } from '@/app/context';
+import { SkillCard } from './components';
 import CloudImage from './assets/cloud.jpg';
+import SoftSkillsStyles from './softskills.module.scss';
 
 function SoftSkills() {
   const { languageOption } = useLanguage();
@@ -16,10 +16,11 @@ function SoftSkills() {
         {SoftSkillsContent[languageOption].softskills.map((item) => {
           return (
             <SkillCard
+              key={item.title}
               title={item.title}
               description={item.description}
               bkgColor={item.bkgColor}
-              color={item.color}
+              txtColor={item.color}
             />
           );
         })}

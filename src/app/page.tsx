@@ -12,7 +12,7 @@ import AnsibleImage from '../../public/images/ansible.png';
 import DockerImage from '../../public/images/docker.png';
 import K8sImage from '../../public/images/k8s.png';
 import { SkillCard, ProfileDescription, Navigation } from './components';
-import { SoftSkillsSection } from './sections';
+import { CertificationsSection, SoftSkillsSection } from './sections';
 
 export default function Home() {
   return (
@@ -50,6 +50,7 @@ export default function Home() {
             </div>
           </section>
           <SoftSkillsSection />
+          <CertificationsSection />
         </main>
         <footer style={{ height: '50vh', backgroundColor: 'black' }}></footer>
       </>

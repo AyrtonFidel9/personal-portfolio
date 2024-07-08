@@ -1,0 +1,138 @@
+.badges_section {
+  height: 35rem;
+  margin-top: 6rem;
+  text-align: center;
+  h3 {
+    font-weight: 300;
+    font-style: italic;
+  }
+  .badges_container {
+    height: 40rem;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    /*position: absolute;*/
+    :nth-child(1) {
+      position: absolute;
+      /*left: 1.2rem;*/
+      /*left: calc(50% + 1.7rem);*/
+      transform: translate(-123%, 0);
+      width: 13rem;
+      height: 13rem;
+    }
+    :nth-child(2) {
+      position: absolute;
+      /*left: calc(50% + 12.7rem);*/
+      /*left: -0.9rem;*/
+      transform: translate(-39%, 0);
+      width: 13rem;
+      height: 13rem;
+    }
+    :nth-child(3) {
+      position: absolute;
+      width: 13rem;
+      height: 13rem;
+      transform: translate(-80%,73%);
+      /*left: calc(50% + 7.3rem);*/
+      /*bottom: 4rem;*/
+      /*bottom: calc(50% - 2.4rem);*/
+    }
+    :nth-child(4) {
+      position: absolute;
+      width: 13rem;
+      height: 13rem;
+      transform: translate(4%,72%);
+      /*left: 4.6rem;*/
+      /*left: calc(50% + 18.2rem);*/
+      /*bottom: 4rem;*/
+      /*bottom: calc(50% - 2.4rem);*/
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .badges_section {
+    .badges_container {
+      left: calc(5%);
+      :nth-child(1) {
+        width: 15rem;
+        height: 15rem;
+      }
+      :nth-child(2) {
+        width: 15rem;
+        height: 15rem;
+      }
+      :nth-child(3) {
+        width: 15rem;
+        height: 15rem;
+      }
+      :nth-child(4) { 
+        width: 15rem;
+        height: 15rem;
+
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .badges_section {
+    display: flex;
+    flex-direction: row;
+    gap: 17rem;
+    margin-left: 5%;
+    h3 {
+      align-self: center;
+      margin-left: 10%;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 824px) {
+  .badges_section {
+    margin-left: 2%;
+    height: 40rem;
+    h3 {
+      font-size: 3.5rem;
+    }
+    .badges_container {
+      margin-left: 10rem;
+      :nth-child(1) {
+        width: 19rem;
+        height: 19rem;
+      }
+      :nth-child(2) {
+        width: 19rem;
+        height: 19rem;
+      }
+      :nth-child(3) {
+        width: 19rem;
+        height: 19rem;
+      }
+      :nth-child(4) { 
+        width: 19rem;
+        height: 19rem;
+  
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .badges_section {
+    margin-left: calc(50% - 31vw);
+    h3 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .badges_section {
+    margin-left: calc(50% - 24vw);
+  }
+}
+
+
+
