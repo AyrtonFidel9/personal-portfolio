@@ -3,9 +3,6 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 10rem;
-  .SoftSkillsContainer {
-
-  }
   .SoftSkillImageContainer {
     display: none;
   }
@@ -27,6 +24,8 @@
 @media (min-width: 645px) {
   .SoftSkills {
     flex-direction: row;
+    position: relative;
+    z-index: -1;
     .SoftSkillImageContainer {
       align-self: center;
       display: block;

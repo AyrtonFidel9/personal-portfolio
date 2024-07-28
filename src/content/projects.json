@@ -1,0 +1,32 @@
+{
+  "en": {
+    "projects": [
+      {
+        "title": "DevOps Pipeline to upload a web application",
+        "description":"Used to deploy a web application based on NODE.JS+ NGINX",
+        "image": "https://github.com/AyrtonFidel9/aws-ci-cd-basic-pipeline/blob/main/images/pipeline-diagram.png?raw=true",
+        "urlProject": "https://github.com/AyrtonFidel9/aws-ci-cd-basic-pipeline"
+      },
+      {
+        "title": "CI/CD Pipeline to validate Terraform",
+        "description":"Used to create a Pipeline that validates Terraform template configurations",
+        "image": "https://github.com/AyrtonFidel9/aws-ci-cd-terraform-validation/blob/main/assets/cd-cd-terraform.png?raw=true",
+        "urlProject": "https://github.com/AyrtonFidel9/aws-ci-cd-terraform-validation"
+      }
+    ] 
+  },
+  "es": {
+    "projects": [
+      {
+        "title": "Pipeline DevOps para subir una aplicación web",
+        "description":"Usado para desplegar una aplicación web basada en NODE.JS + NGINX",
+        "urlProject": ""
+      },
+      {
+        "title": "CI/CD Pipeline para validar Terraform",
+        "description":"Usado para crear un Pipeline que valide las configuraciondes de una plantilla de Terraform",
+        "urlProject": ""
+      }
+    ] 
+  }
+}

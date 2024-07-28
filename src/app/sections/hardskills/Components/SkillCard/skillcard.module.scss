@@ -1,0 +1,27 @@
+.card {
+  background-color: rgba(99, 99, 99, 0.267);
+  min-width: 12rem;
+  min-height: 12rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  display: grid;
+  place-content: center;
+}
+
+.card:hover {
+  background-color: rgba(99, 99, 99, 0.544);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+@media (min-width: 550px) {
+  .card {
+    min-width: 20rem;
+    min-height: 20rem;
+  }
+
+  .card_image {
+    height: 10rem;
+    width: max-content;
+  }
+}

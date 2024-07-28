@@ -15,7 +15,8 @@ function SkillCard({ imageSrc, alt }: Props) {
         className={CardStyle.card_image}
         src={imageSrc}
         alt={alt}
-        height={100}
+        height={65}
+        loading="lazy"
       />
     </div>
   );

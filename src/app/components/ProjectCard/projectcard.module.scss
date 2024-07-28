@@ -1,0 +1,62 @@
+.card {
+  min-width: 30rem;
+  max-width: 50rem;
+  min-height: 25rem;
+  max-width: 45rem;
+  line-height: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  a {
+    min-height: 25rem;
+    max-height: 25rem;
+    background-color: transparent;
+  }
+
+  .card_image {
+    border: solid black 0.1rem;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    &:hover {
+      cursor: pointer;
+      object-fit: cover;
+      filter: blur(1rem);
+      transition-duration: 700ms;
+    }
+    &:hover~.icon_watch {
+      opacity: 1;
+    }
+  }
+  .icon_watch {
+    position: absolute;
+    top: calc(20% + 2.8rem);
+    left: calc(20% + 7.2rem);
+    opacity: 0;
+    .icon {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+    span {
+      display: flex;
+      box-shadow: 0.2rem 0.2rem 0.7rem rgba(96, 96, 96, 0.239);
+      border-style: solid;
+      border-radius: 2rem;
+      padding: 0.3rem 1rem;
+      border-color: transparent;
+    }
+  }
+  
+
+  position: relative;
+
+
+  figcaption {
+    font-weight: 300;
+    color: rgb(94, 94, 94);
+    white-space: wrap;
+  }
+}

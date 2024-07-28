@@ -10,7 +10,11 @@ function ProfileDescription() {
     <div className={ProfileStyles.profile_description}>
       <h2>Ayrton Fidel Avalos</h2>
       <p>{HeaderContent[languageOption].description}</p>
-      <button>
+      <button
+        onClick={() => {
+          window.open(HeaderContent[languageOption].linkCv, '_blank');
+        }}
+      >
         <span>{HeaderContent[languageOption].btnCv}</span>
         <svg
           width="95px"

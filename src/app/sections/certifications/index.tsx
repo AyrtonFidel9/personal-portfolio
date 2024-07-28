@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useLanguage } from '@/app/context';
 import SysOpsBadgeImage from './assets/aws-sysops.png';
 import PractitionerBadgeImage from './assets/cloud-practitioner.png';
 import ArchitectAssociateBadgeImage from './assets/aws-solutions-architect-associate.png';
@@ -7,9 +8,13 @@ import ArchitectProfessionalBadgeImage from './assets/aws-solutions-architect-pr
 import CertificationStyles from './certifications.module.scss';
 
 function Certifications() {
+  const { languageOption } = useLanguage();
+
   return (
     <section className={CertificationStyles.badges_section}>
-      <h3>AWS Certified</h3>
+      <h3>
+        {languageOption === 'en' ? 'AWS Certified' : 'Certificado en AWS'}
+      </h3>
       <div className={CertificationStyles.badges_container}>
         <Image
           src={PractitionerBadgeImage}

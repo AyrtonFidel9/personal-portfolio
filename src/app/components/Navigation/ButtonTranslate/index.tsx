@@ -5,9 +5,11 @@ import { Language } from '@/app/interfaces/language.enum';
 import { useLanguage } from '@/app/context';
 import header from '../../../../content/header.json';
 import TranslateStyles from './ButtonTranslate.module.scss';
+import { usePathname } from 'next/navigation';
 
 function Button() {
   const [hidden, setHidden] = useState(true);
+  const pathname = usePathname();
   const { languageOption, setLanguageOption } = useLanguage();
   const [optionStyles, setOptionStyles] = useState<string>(
     `${TranslateStyles.translateOptions}`
@@ -94,21 +96,43 @@ function Button() {
         key="options-list"
         className={`${optionStyles} ${hidden ? TranslateStyles.hidden_element : ''}`}
       >
-        <input
-          key="english"
-          className="animate__animated animate__fadeInDown"
-          onClick={() => setLanguageOption(Language.english)}
-          value="English 🇬🇧"
-          type="button"
-        />
+        {pathname === '/' ? (
+          <input
+            key="english"
+            className="animate__animated animate__fadeInDown"
+            onClick={() => setLanguageOption(Language.english)}
+            value="English 🇬🇧"
+            type="button"
+          />
+        ) : (
+          <input
+            key="english"
+            className="animate__animated animate__fadeInDown"
+            onClick={() => setLanguageOption(Language.english)}
+            value="English 🇬🇧"
+            type="button"
+            style={{ color: '#000' }}
+          />
+        )}
 
-        <input
-          key="spanish"
-          className="animate__animated animate__fadeInDown"
-          onClick={() => setLanguageOption(Language.spanish)}
-          value="Español 🇪🇸"
-          type="button"
-        />
+        {pathname === '/' ? (
+          <input
+            key="spanish"
+            className="animate__animated animate__fadeInDown"
+            onClick={() => setLanguageOption(Language.spanish)}
+            value="Español 🇪🇸"
+            type="button"
+          />
+        ) : (
+          <input
+            key="spanish"
+            className="animate__animated animate__fadeInDown"
+            onClick={() => setLanguageOption(Language.spanish)}
+            value="Español 🇪🇸"
+            type="button"
+            style={{ color: '#000' }}
+          />
+        )}
       </div>
     </button>
   );

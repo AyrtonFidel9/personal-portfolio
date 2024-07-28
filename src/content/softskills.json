@@ -3,19 +3,19 @@
     "softskills": [
       {
         "title": "Effective Comunication",
-        "description":"Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate. Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure. Exclusive izakaya ",
+        "description":"It's crucial because it allows me to explain complex cloud architectures and solutions to various stakeholders. It is very important for collaborating effectively with other developers and designers.",
         "bkgColor": "rgba(168, 0, 0, 1)",
         "color": "white"
       },
       {
-        "title": "Good Practices",
-        "description":"Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate. Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure. Exclusive izakaya ",
+        "title": "Adaptability",
+        "description":"This skill keeps me flexible to technological changes and project requirements. Important skill for continuous learning because cloud platforms frequently update their services, requiring ongoing education.",
         "bkgColor": "rgba(255, 184, 0, 1)",
         "color": "black"
       },
       {
-        "title": "Automation",
-        "description":"Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate. Punctual adipisicing Borzoi, essential lovely tempor eiusmod irure. Exclusive izakaya ",
+        "title": "Strategic Thinking",
+        "description":"This gives me an understanding of business needs and aligning cloud solutions with organizational goals. Always considering security, cost-optimization, and resilience implications in cloud design and implementation. Everything focused on the WELL-ARCHITECTED Framework.",
         "bkgColor": "rgba(0, 129, 137, 1)",
         "color": "white"
       }
@@ -24,20 +24,20 @@
   "es": {
     "softskills": [
       {
-        "title": "1",
-        "description":"1",
-        "bkgColor": "rgba(0, 129, 137, 1)",
+        "title": "Comunicación efectiva",
+        "description":"Es crucial porque me permite explicar arquitecturas y soluciones complejas en la nube a diversas partes interesadas. Es esencial para colaborar eficazmente con otros desarrolladores y diseñadores.",
+        "bkgColor": "rgba(168, 0, 0, 1)",
         "color": "white"
       },
       {
-        "title": "2",
-        "description":"2",
-        "bkgColor": "rgba(0, 129, 137, 1)",
-        "color": "white"
+        "title": "Adaptabilidad",
+        "description":"Esta habilidad me mantiene flexible ante los cambios tecnológicos y los requisitos de los proyectos. Es una habilidad importante para el aprendizaje continuo porque las plataformas en nube actualizan con frecuencia sus servicios, lo que requiere una formación continua.",
+        "bkgColor": "rgba(255, 184, 0, 1)",
+        "color": "black"
       },
       {
-        "title": "3",
-        "description":"3",
+        "title": "Pensamiento crítico",
+        "description":"Me permite comprender las necesidades empresariales y alinear las soluciones en la nube con los objetivos de la organización. Siempre teniendo en cuenta la seguridad, la optimización de costes y las implicaciones de la capacidad de recuperación en el diseño y la implantación de la nube. Todo centrado en el marco WELL-ARCHITECTED.",
         "bkgColor": "rgba(0, 129, 137, 1)",
         "color": "white"
       }

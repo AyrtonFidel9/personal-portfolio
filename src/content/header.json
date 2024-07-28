@@ -20,7 +20,8 @@
     ],
     "navBtnLanguage": ["Language"],
     "description": "Experienced Cloud Engineer skilled in designing and implementing scalable, optimized, reliable, and secure cloud infrastructures.",
-    "btnCv": "Download CV"
+    "btnCv": "Download CV",
+    "linkCv": "https://drive.google.com/file/d/15hftsBB8OoJD3yKNb1ihNRlDu8Q8O4_5/view?usp=sharing"
   },
   "es": {
     "navOptions": [
@@ -43,6 +44,7 @@
     ],
     "navBtnLanguage": ["Lenguaje"],
     "description": "Ingeniero Cloud con experiencia en el diseño e implementación de infraestructuras Cloud escalables, optimizadas, fiables y seguras.",
-    "btnCv": "Descargar CV"
+    "btnCv": "Descargar CV",
+    "linkCv": "https://drive.google.com/file/d/1k_l9gbCZSeUnL05doKB1s8twwrsjhoid/view?usp=sharing"
   }
 }

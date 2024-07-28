@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '@/app/context';
 import OptionsModule from './Options.module.scss';
 import header from '../../../../content/header.json';
+import { usePathname } from 'next/navigation';
 
 interface option {
   name: string;
@@ -10,16 +11,31 @@ interface option {
 
 function Options() {
   const { languageOption } = useLanguage();
-
+  const pathname = usePathname();
   return (
     <ul className={OptionsModule.items}>
-      {header[languageOption].navOptions.map((item: option) => {
-        return (
-          <li key={item.name}>
-            <a href={item.href}>{item.name}</a>
-          </li>
-        );
-      })}
+      {pathname === '/'
+        ? header[languageOption].navOptions.map((item: option) => {
+            return (
+              <li key={item.name}>
+                <a href={item.href}>{item.name}</a>
+              </li>
+            );
+          })
+        : header[languageOption].navOptions.map((item: option) => {
+            if (item.name === 'Projects')
+              return (
+                <li key={item.name}>
+                  <a href="/projects">{item.name}</a>
+                </li>
+              );
+            else
+              return (
+                <li key={item.name}>
+                  <a href="/">{item.name}</a>
+                </li>
+              );
+          })}
     </ul>
   );
 }
