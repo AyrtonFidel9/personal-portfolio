@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import { Language } from '@/app/interfaces/language.enum';
 import { useLanguage } from '@/app/context';
+import { usePathname } from 'next/navigation';
 import header from '../../../../content/header.json';
 import TranslateStyles from './ButtonTranslate.module.scss';
-import { usePathname } from 'next/navigation';
 
 function Button() {
   const [hidden, setHidden] = useState(true);

@@ -1,9 +1,9 @@
 import React from 'react';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
-import ProjectCardStyles from './projectcard.module.scss';
 import { FaEye } from 'react-icons/fa';
 import { useLanguage } from '@/app/context';
+import ProjectCardStyles from './projectcard.module.scss';
 
 interface Props {
   title: string;

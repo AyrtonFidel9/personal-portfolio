@@ -2,8 +2,8 @@ import { ProjectCard } from '@/app/components';
 import React from 'react';
 import ProjectsContent from '@/content/projects.json';
 import { useLanguage } from '@/app/context';
-import ProjectsSectionStyles from './projects.module.scss';
 import Link from 'next/link';
+import ProjectsSectionStyles from './projects.module.scss';
 
 function ProjectsSection() {
   const { languageOption } = useLanguage();

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLanguage } from '@/app/context';
+import { usePathname } from 'next/navigation';
 import OptionsModule from './Options.module.scss';
 import header from '../../../../content/header.json';
-import { usePathname } from 'next/navigation';
 
 interface option {
   name: string;
@@ -29,12 +29,11 @@ function Options() {
                   <a href="/projects">{item.name}</a>
                 </li>
               );
-            else
-              return (
-                <li key={item.name}>
-                  <a href="/">{item.name}</a>
-                </li>
-              );
+            return (
+              <li key={item.name}>
+                <a href="/">{item.name}</a>
+              </li>
+            );
           })}
     </ul>
   );
