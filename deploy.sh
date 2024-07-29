@@ -9,7 +9,7 @@ sudo chmod -v +x /usr/local/bin/docker-compose
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 
-cd /home/ec2-user
+cd /home/ec2-user/personal-portfolio
 
 sudo docker build -t personal-portfolio-docker .
 
