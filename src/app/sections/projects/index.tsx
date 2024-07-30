@@ -29,7 +29,7 @@ function ProjectsSection() {
           );
         })}
       </div>
-      <p>
+      <p className={ProjectsSectionStyles.link_projects}>
         <Link href="/projects">
           {languageOption === 'en' ? 'See more...' : 'Ver más...'}
         </Link>

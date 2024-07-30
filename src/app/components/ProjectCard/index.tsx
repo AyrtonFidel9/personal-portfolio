@@ -19,6 +19,12 @@ function ProjectCard({ title, description, imageSrc, alt, urlProject }: Props) {
   return (
     <figure className={ProjectCardStyles.card}>
       <a href={urlProject} target="blank">
+        <div className={`${ProjectCardStyles.icon_watch}`}>
+          <span>
+            <FaEye className={ProjectCardStyles.icon} />
+            {languageOption === 'en' ? 'Watch' : 'Ver'}
+          </span>
+        </div>
         <Image
           className={ProjectCardStyles.card_image}
           src={imageSrc}
@@ -26,12 +32,6 @@ function ProjectCard({ title, description, imageSrc, alt, urlProject }: Props) {
           width={300}
           height={300}
         />
-        <div className={`${ProjectCardStyles.icon_watch}`}>
-          <span>
-            <FaEye className={ProjectCardStyles.icon} />
-            {languageOption === 'en' ? 'Watch' : 'Ver'}
-          </span>
-        </div>
       </a>
       <h5>{title}</h5>
       <figcaption>{description}</figcaption>

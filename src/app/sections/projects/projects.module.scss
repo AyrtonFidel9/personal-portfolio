@@ -16,6 +16,12 @@
   }
 }
 
+.link_projects:hover {
+  font-size: 1.7rem;
+  color: rgba(0, 0, 150, 0.863);
+  transition: all 400ms ease;
+}
+
 .card_bar {
   width: 90%;
   margin: 0 auto;

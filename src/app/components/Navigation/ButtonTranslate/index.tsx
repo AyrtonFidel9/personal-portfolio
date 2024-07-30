@@ -19,6 +19,11 @@ function Button() {
     setHidden(!hidden);
   };
 
+  const selectLanguage = (language: Language) => {
+    setLanguageOption(language);
+    sessionStorage.setItem('language', language);
+  };
+
   const handleScroll = (): void => {
     const position: number = window.scrollY;
     if (position > 700) {
@@ -100,7 +105,7 @@ function Button() {
           <input
             key="english"
             className="animate__animated animate__fadeInDown"
-            onClick={() => setLanguageOption(Language.english)}
+            onClick={() => selectLanguage(Language.english)}
             value="English 🇬🇧"
             type="button"
           />
@@ -108,7 +113,7 @@ function Button() {
           <input
             key="english"
             className="animate__animated animate__fadeInDown"
-            onClick={() => setLanguageOption(Language.english)}
+            onClick={() => selectLanguage(Language.english)}
             value="English 🇬🇧"
             type="button"
             style={{ color: '#000' }}
@@ -119,7 +124,7 @@ function Button() {
           <input
             key="spanish"
             className="animate__animated animate__fadeInDown"
-            onClick={() => setLanguageOption(Language.spanish)}
+            onClick={() => selectLanguage(Language.spanish)}
             value="Español 🇪🇸"
             type="button"
           />
@@ -127,7 +132,7 @@ function Button() {
           <input
             key="spanish"
             className="animate__animated animate__fadeInDown"
-            onClick={() => setLanguageOption(Language.spanish)}
+            onClick={() => selectLanguage(Language.spanish)}
             value="Español 🇪🇸"
             type="button"
             style={{ color: '#000' }}
