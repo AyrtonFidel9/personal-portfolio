@@ -9,6 +9,6 @@ sudo chmod -v +x /usr/local/bin/docker-compose
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 
-sudo docker pull ayrtonfidel9/personal-portfolio:v1
+sudo docker pull ayrtonfidel9/personal-portfolio:v1.1
 
-sudo docker run -p 80:80 ayrtonfidel9/personal-portfolio:v1
+sudo docker run -p 80:80 ayrtonfidel9/personal-portfolio:v1.1
