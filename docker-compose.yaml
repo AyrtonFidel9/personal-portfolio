@@ -12,6 +12,7 @@ services:
     #command: bash -c "restorecon -v -R /etc/ssl"
     ports:
       - 443:443
+      - 80:80
     networks:
       - personal
 
