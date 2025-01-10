@@ -9,7 +9,7 @@ services:
       - "./nginx.conf:/etc/nginx/conf.d/default.conf"
       - "/ssl-certificates/public.pem:/etc/ssl/public.pem"
       - "/ssl-certificates/private.pem:/etc/ssl/private.pem"
-    command: bash -c "restorecon -v -R /etc/ssl"
+    #command: bash -c "restorecon -v -R /etc/ssl"
     ports:
       - 443:443
     networks:
