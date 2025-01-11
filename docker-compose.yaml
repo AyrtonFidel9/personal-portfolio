@@ -8,8 +8,8 @@ services:
     restart: always
     volumes:
       - "./nginx.conf:/etc/nginx/conf.d/default.conf"
-      - "./ssl-certificates/public.crt:/etc/ssl/public.crt"
-      - "./ssl-certificates/private.key:/etc/ssl/private.key"
+      - "./ssl-certificates/ayrtonfidel_com.crt:/etc/ssl/public.crt"
+      - "./ssl-certificates/private-afac.key:/etc/ssl/private.key"
       - "./ssl-certificates/ssl.pass:/etc/ssl/ssl.pass"
     ports:
       - 443:443
