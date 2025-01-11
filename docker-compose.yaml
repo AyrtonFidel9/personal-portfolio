@@ -13,7 +13,6 @@ services:
       - "./ssl-certificates/ssl.pass:/etc/ssl/ssl.pass"
     ports:
       - 443:443
-      - 80:80
     networks:
       - personal
 
