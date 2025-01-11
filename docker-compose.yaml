@@ -3,6 +3,7 @@ networks:
 
 services:
   nginx:
+    container_name: nginx
     image: nginx:1.27.3
     restart: always
     volumes:
@@ -17,6 +18,8 @@ services:
       - personal
 
   personal-portfolio:
+    container_name: personal-portfolio
+    image: personal-portfolio
     build: .
     restart: always
     networks:
