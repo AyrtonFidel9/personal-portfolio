@@ -19,8 +19,7 @@ services:
 
   personal-portfolio:
     container_name: personal-portfolio
-    image: personal-portfolio
-    build: .
+    image: ayrtonfidel9/personal-portfolio:v1.2
     restart: always
     networks:
       - personal
